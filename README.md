@@ -6,6 +6,8 @@ steps to instal and run project
 
 # Usage
 examples of how to use the project
+
 ### Authors
 -Ramone
 -Mikhiylo
+-Maksym
