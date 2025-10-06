@@ -1,0 +1,53 @@
+/* General table styles */
+section {
+  border: 2px solid black;
+  box-shadow: 5px 5px 10px #888;
+  background: white;
+  width: 700px;
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid black;
+  /* padding: ; */
+  text-align: left;
+}
+
+th {
+  background-color: yellow;
+}
+
+section tr:nth-child(odd) td {
+  background-color: yellow; /* light yellow */
+}
+section tr:nth-child(odd) td:first-child {
+  background-color: white; /* light yellow */
+}
+section tr:nth-child(3) td:first-child {
+  background-color: yellow; /* light yellow */
+}
+
+section tr:nth-child(9) td:first-child {
+  background-color: yellow;
+  font-weight: bold;
+  text-align: right;
+  padding-right: 15px;
+}
+div {
+  border: 2px solid black;
+  box-shadow: 5px 5px 10px #888;
+  background: white;
+  width: 467px;
+  padding: 20px;
+}
+div tr:nth-child(odd) td {
+  background-color: yellow; /* light yellow */
+}
