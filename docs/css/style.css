@@ -1,0 +1,138 @@
+html{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color: antiquewhite;
+    
+}
+
+div.image img{
+    width: 350px; 
+    height: auto;
+    border-radius: 30%;
+    border-style: double;
+    margin-left: 25px;
+
+
+}
+h1{
+   text-indent: 10px;
+}
+
+div{
+    border: 2px black;
+    border-radius: 2% ;
+}
+
+head ul li{
+    margin-bottom: 10px;
+    
+    display: inline-block;
+}
+head li {
+   word-spacing: 5px;
+}
+
+body{
+    background-color: white;
+    position: relative;
+    border-radius: 5px ;
+    padding-top: 15px;
+    border-bottom: solid 2px rgb(184, 183, 183);
+
+
+}
+
+body p {
+    font-size: 20px;
+
+}
+
+h1 p{
+    margin-left: 30px;
+    padding:0;
+
+}
+
+.top{
+    background-color: rgb(203, 203, 203);
+    margin-bottom: 50px;
+    border-bottom: 3px solid grey;
+
+}
+
+div.about{
+    margin-bottom: 20px;
+    margin-left:25px;
+
+}
+
+div.intro{
+    box-sizing: border-box;
+    border-collapse: separate;
+
+}
+.contact{
+
+ margin:1px; 
+}
+div.hobbies{
+    margin:1px;
+    font-size: 20px;
+
+}
+.image{
+    border-spacing: justify;
+
+}
+.about_contain{
+    display: flex;
+    align-items: left;
+    padding:24px 15px;
+
+}
+div.about_contain p {
+    margin-left: 20px;
+}
+section{
+    text-align: left;
+    float:left;
+    width: 55%;
+    padding-left: 50px;
+}
+aside{
+    text-align: center;
+    float:left;
+    width: 45%;
+
+    padding-left: 150px;
+    
+}
+footer{
+    height:fit-content;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    margin-top:100px;
+    margin-left:20px;
+    font-size: 15px;
+
+}
+.footer{
+    box-sizing: border-box;
+    height:auto;
+}
+div.socials a img{
+    width: 50px;
+    height:auto;
+    padding: 10px;
+    object-fit: contain;
+
+}
+div.contact ul li{
+    text-decoration: none;
+}
+.info{
+     display: flex;
+    align-items: left;
+    padding:24px 15px;
+
+}
+

@@ -1,0 +1,68 @@
+
+html{
+background-image: ;
+backgrounnd
+
+
+body {
+    width: 850px;
+    border: 2px solid black;
+    }
+header img{
+    width: 80px;
+    height:80px;
+    float: 120px;
+
+}
+
+header h1 {
+    color:antiquewhite;
+    margin-left:120px;
+    padding: 20;
+    text-shadow: 4px 5px 6px black;
+}
+ nav ul {
+    background-color: lightgray;
+    list-style-type: none;
+
+ }
+
+ nav ul li{
+    display: inline;
+ }
+  nav ul a:
+
+ main {
+    padding: 4px ;
+ }
+
+ main{
+     width: 500px;
+     height: 300px;
+
+ }
+
+ table, th, td{
+
+    border: 2px black;
+ }
+
+ table caption{
+
+    color: plum;
+    font-size: 23px;
+
+ }
+
+
+ 
+ iframe{
+
+    margin: 10px auto;
+    display: block;
+ }
+ footer {
+    height:120px  ;
+
+ }
+}
