@@ -1,11 +1,13 @@
-###Foreign Beauties
+# Foreign Beauties
 This is a website about
 
-##Installation
+## Installation
 steps to instal and run project
 
-##Usage
+# Usage
 examples of how to use the project
 
-##Authors
--Ramone -Mykhaylo -Maksym
+### Authors
+-Ramone
+-Mykhaylo
+-Maksym
