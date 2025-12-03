@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foreign Beauties</title>
-    <link rel="stylesheet" href="../styles/contact.css" />
+    <link rel="stylesheet" href="../styles/product.css" />
   </head>
   <body>
     <!-- Top Contact Bar -->
@@ -49,64 +49,90 @@
 </nav>
 <!-- End Main Navigation -->
 
-    <!-- Contact Section -->
-    <!-- Start Contact -->
-    <main>
-      <section id="contact-section">
-        <h2>Contact Us</h2>
-        <form id="contact-form" method="post" role="form">
-          <div class="form-row">
-            <div class="form-group">
-              <label for="name">Name</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Name"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Email"
-                required
-              />
-            </div>
-          </div>
+ <main class="product-section">
+  <div class="product-container">
 
-          <div class="form-group">
-            <label for="subject">Subject</label>
-            <input
-              type="text"
-              id="subject"
-              name="subject"
-              placeholder="Subject"
-              required
-            />
-          </div>
+    <!-- LEFT — Product Images -->
+    <div class="product-gallery">
+      <div class="main-image">
+        <img src="../images/necklacemen1.jpg" alt="Main product image">
+      </div>
 
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Message"
-              rows="8"
-              required
-            ></textarea>
-          </div>
+      <div class="thumbnail-row">
+        <button class="thumb-control prev">⬅️</button>
 
-          <div class="form-actions">
-            <button type="submit">Let’s Talk</button>
-          </div>
-        </form>
-      </section>
-    </main>
-    <!-- End Contact -->
+        <div class="thumbnails">
+          <img src="../images/necklacemen2.webp" alt="Thumbnail 2">
+          <img src="../images/necklacemen3.webp" alt="Thumbnail 3">
+          <img src="../images/necklacemen4.webp" alt="Thumbnail 4">
+          <img src="../images/necklacemen5.webp" alt="Thumbnail 5">
+        </div>
+
+        <button class="thumb-control next">➡️</button>
+      </div>
+    </div>
+
+    <!-- RIGHT — Product Details -->
+    <div class="product-details">
+      <h1 class="product-title">Active Wear Necklace</h1>
+
+      <div class="price-rating">
+        <p class="price">$489.99</p>
+        <p class="rating">★★★★☆ <span class="rating-info">4.8 | 36 reviews</span></p>
+      </div>
+
+      <p><strong class="label">Brand:</strong> Easy Wear</p>
+
+      <!-- SIZE -->
+      <div class="product-option-group">
+        <label class="label">Size:</label>
+        <div class="option-buttons">
+          <button class="option-btn">S</button>
+          <button class="option-btn">M</button>
+          <button class="option-btn">L</button>
+          <button class="option-btn">XL</button>
+        </div>
+      </div>
+
+      <!-- QUANTITY -->
+      <div class="product-option-group">
+        <label class="label">Quantity:</label>
+        <div class="quantity-control">
+          <button class="qty-btn minus">-</button>
+          <span class="quantity">1</span>
+          <button class="qty-btn plus">+</button>
+        </div>
+      </div>
+
+      <!-- DESCRIPTION -->
+      <h3 class="subheading">Description</h3>
+      <p class="description">
+A bold men’s gold necklace crafted for timeless style and strength. Its polished chain design adds sophistication, making it perfect for both everyday wear and special occasions. A statement piece that reflects confidence and elegance.      </p>
+
+      <!-- COLORS -->
+      <h3 class="subheading">Available Colors</h3>
+      <p>Gold / Silver</p>
+
+      <!-- SPECIFICATION -->
+      <h3 class="subheading">Specifications</h3>
+      <ul class="spec-list">
+        <li>18k Gold bonding over Stainless Steel</li>
+        <li>Anti-tarnish Coating</li>
+        <li>8mm wide</li>
+        <li>Weighs 90-120 grams</li>
+        <li>Secure Box Clasp</li>
+        <li>Ships within 48 working hours</li>
+      </ul>
+
+      <!-- ACTIONS -->
+      <div class="actions">
+        <button class="action-btn buy">Buy Now</button>
+        <button class="action-btn cart">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</main>
+
 
     <!-- Start Footer -->
     <footer id="custom-footer">
@@ -165,5 +191,6 @@
     document.querySelector('.nav-menu').classList.toggle('active');
   }
 </script>
+<script src="../scripts/product.js"></script>
   </body>
 </html>
