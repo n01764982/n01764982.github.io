@@ -30,19 +30,14 @@
 
     <div class="nav-menu">
       <ul class="nav-links">
-        <li><a href="../Index.html">Home</a></li>
+        <li><a href="../index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="shop.html">Shop</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
 
       <div class="nav-icons">
-        <form class="search-form">
-          <input type="text" placeholder="Search..." />
-          <button type="submit">🔍</button>
-        </form>
-        <a href="#" class="icon-cart">🛒 <span class="badge">7</span></a>
-        <a href="#" class="icon-user">👤 <span class="badge">+99</span></a>
+            <a href="./cart.html" class="icon-cart">🛒 <span class="badge">0</span></a>
       </div>
     </div>
   </div>
@@ -59,7 +54,7 @@
       </div>
 
       <div class="thumbnail-row">
-        <button class="thumb-control prev">⬅️</button>
+        <!-- <button class="thumb-control prev"></button> -->
 
         <div class="thumbnails">
           <img src="../images/necklacemen2.webp" alt="Thumbnail 2">
@@ -68,7 +63,7 @@
           <img src="../images/necklacemen5.webp" alt="Thumbnail 5">
         </div>
 
-        <button class="thumb-control next">➡️</button>
+        <!-- <button class="thumb-control next"></button> -->
       </div>
     </div>
 
@@ -81,14 +76,16 @@
         <p class="rating">★★★★☆ <span class="rating-info">4.8 | 36 reviews</span></p>
       </div>
 
-      <p><strong class="label">Brand:</strong> Easy Wear</p>
+      <p id="brand"></p>
+      <p id="material"></p>
+      <p id="gender"></p>
 
       <!-- SIZE -->
       <div class="product-option-group">
         <label class="label">Size:</label>
         <div class="option-buttons">
           <button class="option-btn">S</button>
-          <button class="option-btn">M</button>
+          <button class="option-btn active">M</button>
           <button class="option-btn">L</button>
           <button class="option-btn">XL</button>
         </div>
@@ -109,10 +106,6 @@
       <p class="description">
 A bold men’s gold necklace crafted for timeless style and strength. Its polished chain design adds sophistication, making it perfect for both everyday wear and special occasions. A statement piece that reflects confidence and elegance.      </p>
 
-      <!-- COLORS -->
-      <h3 class="subheading">Available Colors</h3>
-      <p>Gold / Silver</p>
-
       <!-- SPECIFICATION -->
       <h3 class="subheading">Specifications</h3>
       <ul class="spec-list">
@@ -126,7 +119,6 @@ A bold men’s gold necklace crafted for timeless style and strength. Its polish
 
       <!-- ACTIONS -->
       <div class="actions">
-        <button class="action-btn buy">Buy Now</button>
         <button class="action-btn cart">Add to Cart</button>
       </div>
     </div>
@@ -134,7 +126,7 @@ A bold men’s gold necklace crafted for timeless style and strength. Its polish
 </main>
 
 
-    <!-- Start Footer -->
+     <!-- Start Footer -->
     <footer id="custom-footer">
       <div class="footer-container">
         <div class="footer-columns">
@@ -148,31 +140,19 @@ A bold men’s gold necklace crafted for timeless style and strength. Its polish
           </div>
 
           <div class="footer-column">
-            <h2>Products</h2>
-            <ul class="footer-list">
-              <li><a href="#">Trending Products</a></li>
-              <li><a href="#">Gold Accessories</a></li>
-              <li><a href="#">Men's Necklaces</a></li>
-              <li><a href="#">Women's Necklaces</a></li>
-              <li><a href="#">Bracelets</a></li>
-            </ul>
-          </div>
-
-          <div class="footer-column">
             <h2>Further Info</h2>
             <ul class="footer-list">
-              <li><a href="../Index.html">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Shop</a></li>
-              <!-- <li><a href="#">FAQs</a></li> -->
-              <li><a href="#">Contact</a></li>
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./shop.html">Shop</a></li>
+              <li><a href="./contact.html">Contact</a></li>
             </ul>
           </div>
         </div>
 
         <div class="footer-bottom">
           <div class="social-icons">
-            <a href="http://facebook.com/" target="_blank">🌐 Facebook</a>
+            <a href="https://facebook.com/" target="_blank">🌐 Facebook</a>
             <a href="https://www.instagram.com/" target="_blank"
               >📸 Instagram</a
             >
@@ -191,6 +171,6 @@ A bold men’s gold necklace crafted for timeless style and strength. Its polish
     document.querySelector('.nav-menu').classList.toggle('active');
   }
 </script>
-<script src="../scripts/product.js"></script>
+<script type="module" src="../scripts/product.js"></script>
   </body>
 </html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="icon" type="image/star" href="/Image/star.png">
+    <title>Foreign Beauties</title>
+</head>
+<body>
+<header class="top-bar">
+      <div class="contact-left">
+        <a href="mailto:info@foreignb.com">📧 info@foreignb.com</a>
+        <a href="tel:010-020-0340">📞 123-456-7890</a>
+      </div>
+      <nav class="social-links">
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        <a href="https://twitter.com/" target="_blank">Twitter</a>
+        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+      </nav>
+    </header>
+
+    <!-- Main Navigation -->
+   <nav class="main-nav">
+  <div class="nav-container">
+    <a href="./index.html" class="logo">🛍️ Foreign Beauties</a>
+
+    <button class="menu-toggle" aria-label="Toggle navigation" onclick="toggleMenu()">☰</button>
+
+    <div class="nav-menu">
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./pages/about.html">About</a></li>
+        <li><a href="./pages/shop.html">Shop</a></li>
+        <li><a href="./pages/contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-icons">
+        <a href="./pages/cart.html" class="icon-cart">🛒 <span class="badge">0</span></a>
+      </div>
+    </div>
+  </div>
+</nav>
+<main>
+<div class="slideshow-container">
+  <button class="prev">&#10094;</button>
+  <div class="slideshow">
+    <img src="./images/banner1.jpg" class="slide active" alt="Image 1">
+    <img src="./images/banner2.jpg" class="slide" alt="Image 2">
+    <img src="./images/banner3.jpeg" class="slide" alt="Image 3">
+  </div>
+  <button class="next">&#10095;</button>
+</div>
+<h1 style="text-align: center;">Now Trending</h1>
+      <section id="products-container">
+        <!-- Product Card 1 -->
+<div class="product-card">
+  <img src="images/item1.webp" alt="Golden Ring — Classic">
+  <h3>Golden Ring — Classic</h3>
+  <p>Price: $249</p>
+  <p class="rating">Reviews: ⭐⭐⭐⭐⭐</p>
+  <div class="overlay">
+    <button onclick="handleAddToCart(this, 'Golden Ring — Classic', '249', '../images/item1.webp', '1','M')">
+      Add to Cart
+    </button>
+    <a href="./pages/product.html?product_id=1" class="show-link">Show product</a>
+  </div>
+</div>
+
+<!-- Product Card 2 -->
+<div class="product-card">
+  <img src="images/item2.avif" alt="Diamond Ring — Aurora">
+  <h3>Diamond Ring — Aurora</h3>
+  <p>Price: $1299</p>
+  <p class="rating">Reviews: ⭐⭐⭐⭐⭐</p>
+  <div class="overlay">
+    <button onclick="handleAddToCart(this, 'Diamond Ring — Aurora', '1299', '../images/item2.avif', '1','M')">
+      Add to Cart
+    </button>
+    <a href="./pages/product.html?product_id=2" class="show-link">Show product</a>
+  </div>
+</div>
+
+<!-- Product Card 3 -->
+<div class="product-card">
+  <img src="images/item3.jpg" alt="Silver Necklace — Infinity">
+  <h3>Silver Necklace — Infinity</h3>
+  <p>Price: $149</p>
+  <p class="rating">Reviews: ⭐⭐⭐⭐⭐</p>
+  <div class="overlay">
+    <button onclick="handleAddToCart(this, 'Silver Necklace — Infinity', '149', '../images/item3.jpg', '1','M')">
+      Add to Cart
+    </button>
+    <a href="./pages/product.html?product_id=3" class="show-link">Show product</a>
+  </div>
+</div>
+
+<!-- Product Card 4 -->
+<div class="product-card">
+  <img src="images/item4.webp" alt="Gold Necklace — Sunlight">
+  <h3>Gold Necklace — Sunlight</h3>
+  <p>Price: $499</p>
+  <p class="rating">Reviews: ⭐⭐⭐⭐⭐</p>
+  <div class="overlay">
+    <button onclick="handleAddToCart(this, 'Gold Necklace — Sunlight', '499', '../images/item4.webp', '1','M')">
+      Add to Cart
+    </button>
+    <a href="./pages/product.html?product_id=4" class="show-link">Show product</a>
+  </div>
+</div>
+
+      </section>
+
+</main>
+
+     <!-- Start Footer -->
+    <footer id="custom-footer">
+      <div class="footer-container">
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h2 class="footer-logo">🛍️ Foreign Beauties</h2>
+            <ul class="footer-list">
+              <li>📍 Toronto, ON, CANADA</li>
+              <li>📞 <a href="tel:010-020-0340">123-456-7890</a></li>
+              <li>✉️ <a href="mailto:info@foreignb.com">info@foreignb.com</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h2>Further Info</h2>
+            <ul class="footer-list">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./pages/about.html">About Us</a></li>
+              <li><a href="./pages/shop.html">Shop</a></li>
+              <li><a href="./pages/contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="social-icons">
+            <a href="https://facebook.com/" target="_blank">🌐 Facebook</a>
+            <a href="https://www.instagram.com/" target="_blank"
+              >📸 Instagram</a
+            >
+            <a href="https://twitter.com/" target="_blank">🐦 Twitter</a>
+            <a href="https://www.linkedin.com/" target="_blank">💼 LinkedIn</a>
+          </div>
+
+          <div class="subscribe">
+            <p>&copy; 2025 Foreign Beauties. All Rights Reserved.</p>
+          </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+   <script>
+  function toggleMenu() {
+    document.querySelector('.nav-menu').classList.toggle('active');
+  }
+</script>
+<script src="scripts/init.js"></script>
+<script src="/scripts/slide.js"></script>
+</body>
+</html>
