@@ -9,5 +9,5 @@ examples of how to use the project
 
 ### Authors
 -Ramone
--Mikhiylo
+-Mykhaylo
 -Maksym

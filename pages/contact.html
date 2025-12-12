@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foreign Beauties</title>
+    <link rel="stylesheet" href="../styles/contact.css" />
+  </head>
+  <body>
+    <!-- Top Contact Bar -->
+    <header class="top-bar">
+      <div class="contact-left">
+        <a href="mailto:info@foreignb.com">📧 info@foreignb.com</a>
+        <a href="tel:010-020-0340">📞 123-456-7890</a>
+      </div>
+      <nav class="social-links">
+        <a href="https://facebook.com" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        <a href="https://twitter.com/" target="_blank">Twitter</a>
+        <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+      </nav>
+    </header>
+
+    <!-- Main Navigation -->
+   <nav class="main-nav">
+  <div class="nav-container">
+    <a href="../index.html" class="logo">🛍️ Foreign Beauties</a>
+
+    <button class="menu-toggle" aria-label="Toggle navigation" onclick="toggleMenu()">☰</button>
+
+    <div class="nav-menu">
+      <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a class="current" href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-icons">
+            <a href="./cart.html" class="icon-cart">🛒 <span class="badge">0</span></a>
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- End Main Navigation -->
+
+    <!-- Contact Section -->
+    <!-- Start Contact -->
+    <main>
+      <section id="contact-section">
+        <h2>Contact Us</h2>
+        <form id="contact-form" method="post" role="form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="Subject"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Message"
+              rows="8"
+              required
+            ></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit">Let’s Talk</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <!-- End Contact -->
+
+    <!-- Start Footer -->
+    <footer id="custom-footer">
+      <div class="footer-container">
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h2 class="footer-logo">🛍️ Foreign Beauties</h2>
+            <ul class="footer-list">
+              <li>📍 Toronto, ON, CANADA</li>
+              <li>📞 <a href="tel:010-020-0340">123-456-7890</a></li>
+              <li>✉️ <a href="mailto:info@foreignb.com">info@foreignb.com</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h2>Further Info</h2>
+            <ul class="footer-list">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="./shop.html">Shop</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <div class="social-icons">
+            <a href="https://facebook.com/" target="_blank">🌐 Facebook</a>
+            <a href="https://www.instagram.com/" target="_blank"
+              >📸 Instagram</a
+            >
+            <a href="https://twitter.com/" target="_blank">🐦 Twitter</a>
+            <a href="https://www.linkedin.com/" target="_blank">💼 LinkedIn</a>
+          </div>
+
+          <div class="subscribe">
+            <p>&copy; 2025 Foreign Beauties. All Rights Reserved.</p>
+          </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+     <script>
+      function toggleMenu() {
+        document.querySelector('.nav-menu').classList.toggle('active');
+      }
+      const form = document.getElementById('contact-form');
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        alert('Thank you for contacting us, ' + name + '! We will get back to you shortly.');
+        form.reset();
+      });
+     </script>
+    <script src="../scripts/init.js"></script>
+  </body>
+</html>
